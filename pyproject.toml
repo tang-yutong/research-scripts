@@ -1,0 +1,16 @@
+[project]
+name = "research-scripts"
+version = "1.0.0"
+description = "Automation pipelines for computational chemistry research: MD trajectory analysis, docking screens, wavefunction analysis, figures."
+requires-python = ">=3.9"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py39"
+
+[tool.ruff.lint]
+select = ["F", "E9"]
