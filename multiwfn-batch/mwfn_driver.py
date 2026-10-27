@@ -221,7 +221,7 @@ def main(argv=None) -> int:
                          "single task; test: configured smoke-test species")
     ap.add_argument("fchk", nargs="?", help="wavefunction file (run-iri/run-igmh)")
     ap.add_argument("dest", nargs="?", help="output folder name (run-iri/run-igmh)")
-    ap.add_argument("frag1", nargs="?", help="fragment 1 range, e.g. 174-199 (run-igmh)")
+    ap.add_argument("frag1", nargs="?", help="fragment 1 range, e.g. 60-85 (run-igmh)")
     ap.add_argument("frag2", nargs="?", help="fragment 2 range (run-igmh)")
     args = ap.parse_args(argv)
     log = common.get_logger("mwfn_driver", args.log_level)
